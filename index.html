@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Make sure you have included Tailwind CSS properly -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css -->
+    <style>
+      /* Define the animation */
+      @keyframes moveArrow {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(5px); /* Move 5 pixels to the right */
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      /* Apply the animation to the image */
+      #arrow-link img {
+        animation: moveArrow 2s infinite; /* Adjust the duration as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-[#FAFAFA]">
+        <div class="container py-4 mx-auto flex justify-between items-baseline">
+          <!-- Logo -->
+          <div>
+            <a href="#"><h1 class="text-2xl font-bold">MEDIASTAR LTD.</h1></a>
+          </div>
+
+          <!-- Menu items -->
+          <div class="hidden md:flex space-x-10 text-md md:order-2">
+            <!-- Dropdown for "COMPANY" -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-blue-500 flex items-center"
+                onclick="toggleDropdown('company-dropdown')"
+              >
+                <p>COMPANY</p>
+                <!-- Arrow indicator -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="h-4 w-4 inline-block ml-1 transform transition-transform"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Dropdown content (initially hidden) -->
+              <div
+                id="company-dropdown"
+                class="hidden absolute left-0 mt-2 space-y-2 bg-white border border-gray-200"
+              >
+                <a href="#"><p>Option 1</p></a>
+                <a href="#"><p>Option 2</p></a>
+                <a href="#"><p>Option 3</p></a>
+              </div>
+            </div>
+
+            <!-- Other menu items -->
+            <a href="#"><p>BUSINESSES</p></a>
+            <a href="#"><p>CSR</p></a>
+            <a href="#"><p>CAREER</p></a>
+            <a href="#"><p>CONTACT</p></a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden pr-2">
+            <button id="mobile-menu-button" class="text-black">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-8 w-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile menu (initially hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+          <!-- Dropdown for "COMPANY" in mobile menu -->
+          <div class="relative group">
+            <a
+              href="#"
+              class="group-hover:text-blue-500"
+              onclick="toggleDropdown('mobile-company-dropdown')"
+            >
+              <p>COMPANY</p>
+              <!-- Arrow indicator -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-4 w-4 inline-block ml-1 transform transition-transform"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </a>
+            <!-- Dropdown content (initially hidden) -->
+            <div
+              id="mobile-company-dropdown"
+              class="hidden mt-2 space-y-2 bg-white border border-gray-200"
+            >
+              <a href="#"><p>Option 1</p></a>
+              <a href="#"><p>Option 2</p></a>
+              <a href="#"><p>Option 3</p></a>
+            </div>
+          </div>
+
+          <!-- Other mobile menu items -->
+          <a href="#"><p>BUSINESSES</p></a>
+          <a href="#"><p>CSR</p></a>
+          <a href="#"><p>CAREER</p></a>
+          <a href="#"><p>CONTACT</p></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner -->
+      <div
+        style="background-image: url(./assets/images/banner.png)"
+        class="w-full bg-cover bg-center h-[100vh]"
+      >
+        <div class="flex flex-col justify-center pl-10 md:pl-24 h-full">
+          <h1 class="text-white text-4xl md:text-6xl font-bold">
+            The largest Bengali <br />
+            news media company <br />
+            in the world
+          </h1>
+          <div>
+            <a href="#" id="arrow-link">
+              <img class="w-20 md:w-44" src="./assets/icons/arrow.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- About Us -->
+      <div class="flex justify-between">
+        <div>
+<img src="./assets/images/image27.png" alt="">
+        </div>
+        <div class="flex ">
+           <div>
+            <img class="mt-2 " src="./assets/icons/arrow2.png" alt="">
+           </div>
+            <h1 class="text-3xl font-bold"><span class="text-[#FB2121]">Discover, Explore, Evolve:</span> Embrace the Journey with our Media</h1>
+        </div>
+        <div>
+            <p>
+                At our media company, we invite you to discover, explore, and evolve through an enriching journey of information and storytelling. With a commitment to delivering captivating content, we strive to ignite your curiosity and inspire a thirst for knowledge. Embrace the diverse perspectives and narratives we bring to light, allowing you to broaden your horizons and gain new insights.
+            </p>
+        </div>
+      </div>
+       
+        
+      
+    </main>
+    <footer></footer>
+    <!-- JavaScript to toggle dropdowns -->
+    <script>
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
+
+      // Toggle mobile menu
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- <script>
+    // Optional: Stop the animation when the user clicks the arrow
+    document.getElementById('arrow-link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        this.querySelector('img').style.animation = 'none'; // Stop the animation
+    });
+</script> -->
+  </body>
+</html>
