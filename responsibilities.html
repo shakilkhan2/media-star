@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediaStar | Responsibilities</title>
+    <title>MediaStar | CSR</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <style>
+        /* Define the animation */
+        @keyframes moveArrow {
+          0% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(5px); /* Move 5 pixels to the right */
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+  
+        /* Apply the animation to the image */
+        .arrow-link img {
+          animation: moveArrow 2s infinite; /* Adjust the duration as needed */
+        }
+      </style>
 </head>
 <body>
 <!-- Header -->
@@ -63,7 +83,7 @@
           <!-- Other menu items -->
           <a href="./business.html"><p>BUSINESSES</p></a>
           <a href="./responsibilities.html"><p>CSR</p></a>
-          <a href="#"><p>CAREER</p></a>
+          <a href="./career.html"><p>CAREER</p></a>
           <a href="#"><p>CONTACT</p></a>
         </div>
 
@@ -136,7 +156,7 @@
         <!-- Other mobile menu items -->
         <a href="./business.html"><p>BUSINESSES</p></a>
         <a href="./responsibilities.html"><p>CSR</p></a>
-        <a href="#"><p>CAREER</p></a>
+        <a href="./career.html"><p>CAREER</p></a>
         <a href="#"><p>CONTACT</p></a>
       </div>
     </nav>
@@ -179,7 +199,7 @@
         <div>
 <img class="w-96 rounded-lg" src="./assets/images/activities.png" alt="">
         </div>
-        <div class="w-full md:w-[500px] mt-10 md:mt-0">
+        <div class="w-full   md:w-[500px] mt-10 md:mt-0">
           <div class="flex place-items-start">
             <div>
               <a href="#" >
@@ -191,7 +211,7 @@
             </div>
           </div>
           <div class=" text-justify">
-            <ul class="mt-8 font-semibold">
+            <ul style="list-style-type: disc;" class="mt-8 font-semibold mx-10">
 <li>Fund to rehabilitate women with acid burns</li>
 <li>Movement against Drug Abuse</li>
 <li>Oditiya Scholarship</li>
@@ -204,6 +224,23 @@
           </div>
           
         </div>
+      </div>
+      <!-- Social Organizations -->
+      <div class="m-24">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-10 items-center">
+            <a href="#"><img src="./assets/images/medhabi.png" alt=""></a>
+            <a href="#"><img src="./assets/images/additiya.png" alt=""></a>
+            <a href="#"><img src="./assets/images/no-smoke.png" alt=""></a>
+            <a href="#"><img src="./assets/images/meril.png" alt=""></a>
+            <a href="#"><img src="./assets/images/donate.png" alt=""></a>
+          </div>
+          <a href="#" class="">
+    
+            <button class="flex justify-between items-center bg-[#0572E6] px-4 py-3 mt-10">
+              <p class="text-[#fff]">About Us</p>
+              <a class="arrow-link" href=""><img class="w-16 ms-4 " src="./assets/icons/arrow.png" alt="link arrow"></a>
+            </button>
+          </a>
       </div>
     </main>
     <!-- Footer -->
