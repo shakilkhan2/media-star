@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="sticky top-0">
+        <nav class="bg-[#FAFAFA]">
+          <div class="container py-4 mx-auto flex justify-between items-baseline">
+            <div>
+              <a href="./index.html"
+                ><h1 class="text-2xl font-bold ps-2 md:ps-0">
+                  MEDIASTAR LTD.
+                </h1></a
+              >
+            </div>
+  
+            <!-- Menu items -->
+            <div class="hidden md:flex space-x-10 text-md md:order-2">
+              <!-- Dropdown for "COMPANY" -->
+              <div class="relative group">
+                <a
+                  href="#"
+                  class="group-hover:text-red-500 flex items-center"
+                  onclick="toggleDropdown('company-dropdown', 'open-arrow')"
+                >
+                  <p>COMPANY</p>
+                  <!-- Arrow indicators for open and closed -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="h-4 w-4 inline-block ml-1 transform transition-transform"
+                    id="open-arrow"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </a>
+                <!-- Dropdown content (initially hidden) -->
+                <div
+                id="company-dropdown"
+                class="hidden absolute left-0 mt-2 p-6 mx-auto space-y-4 bg-[#D9D9D9D9] opacity-85 "
+              >
+                <a href="./about.html"><p>ABOUT US</p></a>
+                <hr class="py-1 border-gray-500" />
+                <a href="#"><p>ACHIEVEMENTS</p></a>
+                <hr class="py-1 border-gray-500"/>
+                <a href="#"><p>MANAGEMENT</p></a>
+                <hr class="py-1 border-gray-500" />
+              </div>
+              </div>
+  
+              <!-- Other menu items -->
+              <a href="#"><p>BUSINESSES</p></a>
+              <a href="#"><p>CSR</p></a>
+              <a href="#"><p>CAREER</p></a>
+              <a href="#"><p>CONTACT</p></a>
+            </div>
+  
+            <!-- Mobile menu button -->
+            <div class="md:hidden pr-2">
+              <button id="mobile-menu-button" class="text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="h-8 w-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+  
+          <!-- Mobile menu (initially hidden) -->
+          <div
+            id="mobile-menu"
+            class="hidden md:hidden text-right pr-2 fixed top-[72px] w-full bg-gray-400 opacity-50 z-50"
+          >
+            <!-- Dropdown for "COMPANY" in mobile menu -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-red-500 flex items-center justify-end"
+                onclick="toggleDropdown('mobile-company-dropdown', 'mobile-open-arrow')"
+              >
+                <p>COMPANY</p>
+                <!-- Arrow indicator -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="h-4 w-4 inline-block ml-1 transform transition-transform"
+                  id="mobile-open-arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Dropdown content (initially hidden) -->
+              <div
+                id="mobile-company-dropdown"
+                class="hidden mt-2 me-4 ms-20 space-y-2  "
+              >
+              <hr>
+                <a href="#"><p>ABOUT US</p></a>
+                <hr>
+                <a href="#"><p>ACHIEVEMENTS</p></a>
+                <hr>
+                <a href="#"><p>MANAGEMENT</p></a>
+                <hr>
+              </div>
+            </div>
+  
+            <!-- Other mobile menu items -->
+            <a href="#"><p>BUSINESSES</p></a>
+            <a href="#"><p>CSR</p></a>
+            <a href="#"><p>CAREER</p></a>
+            <a href="#"><p>CONTACT</p></a>
+          </div>
+        </nav>
+      </header>
+      <main>
+<!-- Banner -->
+<div style="background-image: url(./assets/images/cover.png); " class="w-full bg-cover bg-center h-[70vh]"  >
+<div class="flex justify-center items-center text-white text-4xl font-bold h-full">
+    <h1>ABOUT US  </h1>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center mx-10 gap-12 my-10">
+    <div class="w-full md:w-[50%]">
+        <h1 class="text-3xl font-bold text-[#FB2121] mb-12">
+            Innovating Media, <br> Redefining Possibilities
+        </h1>
+        <p class="text-justify font-semibold mb-10">
+            Mediastar Limited, a dynamic and innovative media company dedicated to pushing the boundaries of creativity and storytelling. At Mediastar, we believe in the power of media to inspire, inform, and entertain. Our passion for excellence drives us to deliver exceptional content that captivates audiences across various platforms.
+        </p>
+        </div>
+        <div>
+            <img  src="./assets/images/about.png" alt="celebrating">
+        </div>
+</div>
+<div class="mx-10 mb-10">
+    <p class="text-justify font-semibold">
+        As a leader in the industry, we strive to redefine the media landscape by embracing cutting-edge technology, trends, and ideas. Our talented team of visionaries, from directors to producers, writers to editors, work collaboratively to create compelling narratives that resonate with diverse audiences.
+    </p>
+    <p class="text-justify font-semibold my-10">
+        At Mediastar, we understand the importance of authentic storytelling. We believe in giving voice to untold stories, exploring new perspectives, and shedding light on issues that matter. Through our films, television shows, documentaries, and digital content, we aim to engage, educate, and empower individuals around the world.
+    </p>
+    <p class="text-justify font-semibold">
+        Our commitment to quality is unwavering. We meticulously craft each project, paying attention to every detail, from pre-production to post-production. We strive for excellence in every aspect, ensuring that our work meets the highest standards of artistic integrity and technical precision.
+    </p>
+</div>
+<!-- slider -->
+<div class="mb-10">
+    <div class="max-w-2xl md:max-w-full h-full">
+      <div id="default-carousel" class="relative" data-carousel="static">
+        <div class="overflow-hidden relative h-56 sm:h-64 md:h-96">
+          <div class="duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/images/cover.png"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+          </div>
+
+          <div class="duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/images/cover.png"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+          </div>
+
+          <div class="duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/images/cover.png"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+
+        <button
+          type="button"
+          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+           
+          </span>
+        </button>
+        <button
+          type="button"
+          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    </div>
+  </div>
+  <!-- slider end -->
+      </main>
+      <footer class="flex flex-col md:flex-row justify-between bg-[#E2E2E2] p-10">
+        <div class="">
+          <h1 class="text-4xl font-bold">MEDIASTAR LTD.</h1>
+          <div class="flex gap-4 my-4">
+            <i class="fa-brands text-3xl fa-facebook-f"></i>
+            <i class="fa-brands text-3xl fa-instagram"></i>
+            <i class="fa-brands text-3xl fa-twitter"></i>
+            <i class="fa-brands text-3xl fa-youtube"></i>
+        
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="font-semibold">
+            <a href=""><p>About us</p></a>
+            <a href=""><p>Businesses</p></a>
+            <a href=""><p>Career</p></a>
+            
+          </div>
+          <div>
+            <p class="font-semibold">Contact Us</p>
+            <p class="font-semibold mt-4">Address</p>
+            <p>Pragati Insurance Bhaban, <br> 20-21, Karwan Bazar Dhaka 1215, <br> Bangladesh</p>
+            <a href="#"><p class="mt-4">Privacy Policy</p></a>
+            <a href="#"><p>Terms of Use</p></a>
+          </div>
+        </div>
+            </footer>
+            <!-- JS -->
+<script src="https://kit.fontawesome.com/2f678b91de.js" crossorigin="anonymous"></script>
+<script>
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.classList.toggle("hidden");
+  }
+
+  // Toggle mobile menu
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileMenuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+</body>
+</html>
