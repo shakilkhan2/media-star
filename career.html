@@ -62,9 +62,9 @@
 
           <!-- Other menu items -->
           <a href="./business.html"><p>BUSINESSES</p></a>
-          <a href="./responsibilities.html"><p>CSR</p></a>
-          <a href="#"><p>CAREER</p></a>
-          <a href="#"><p>CONTACT</p></a>
+          <a href="./csr.html"><p>CSR</p></a>
+          <a href="./career.html"><p>CAREER</p></a>
+          <a href="./contact.html"><p>CONTACT</p></a>
         </div>
 
         <!-- Mobile menu button -->
@@ -135,16 +135,16 @@
 
         <!-- Other mobile menu items -->
         <a href="./business.html"><p>BUSINESSES</p></a>
-        <a href="./responsibilities.html"><p>CSR</p></a>
-        <a href="#"><p>CAREER</p></a>
-        <a href="#"><p>CONTACT</p></a>
+        <a href="./csr.html"><p>CSR</p></a>
+        <a href="./career.html"><p>CAREER</p></a>
+        <a href="./contact.html"><p>CONTACT</p></a>
       </div>
     </nav>
   </header>
     <main>
 <!-- Banner -->
-<div style="background-image: url(./assets/images/cover.png); " class="w-full bg-cover bg-center h-[70vh]"  >
-    <div class="flex justify-center items-center text-white text-4xl font-bold h-full">
+<div style="background-image: url(./assets/images/cover.png); " class="w-full bg-cover bg-center h-[30vh] md:h-[70vh]"  >
+    <div class="flex justify-center items-center text-white text-3xl md:text-4xl font-bold h-full">
         <h1 class="text-center">CAREER</h1>
     </div>
     </div>
@@ -210,8 +210,49 @@ Other Benefits: As per company policy
 
     </div>
     </main>
-    <footer>
+    <!-- Footer -->
+    <footer class="flex flex-col md:flex-row justify-between bg-[#E2E2E2] p-10">
+      <div class="">
+        <h1 class="text-2xl md:text-4xl font-bold">MEDIASTAR LTD.</h1>
+        <div class="flex gap-4 my-4">
+          <i class="fa-brands text-3xl fa-facebook-f"></i>
+          <i class="fa-brands text-3xl fa-instagram"></i>
+          <i class="fa-brands text-3xl fa-twitter"></i>
+          <i class="fa-brands text-3xl fa-youtube"></i>
+      
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="font-semibold">
+          <a href="./about.html"><p>About us</p></a>
+          <a href="./business.html"><p>Businesses</p></a>
+          <a href="./career.html"><p>Career</p></a>
+          
+        </div>
+        <div>
+          <p class="font-semibold">Contact Us</p>
+          <p class="font-semibold mt-4">Address</p>
+          <p>Pragati Insurance Bhaban, <br> 20-21, Karwan Bazar Dhaka 1215, <br> Bangladesh</p>
+          <a href="#"><p class="mt-4">Privacy Policy</p></a>
+          <a href="#"><p>Terms of Use</p></a>
+        </div>
+      </div>
+          </footer>
+           <!-- JS -->
+<script src="https://kit.fontawesome.com/2f678b91de.js" crossorigin="anonymous"></script>
+<script>
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.classList.toggle("hidden");
+  }
 
-    </footer>
+  // Toggle mobile menu
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileMenuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
 </body>
 </html>
