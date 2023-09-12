@@ -1,116 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/icons/star.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/star.png"
+      type="image/x-icon"
+    />
     <title>MediaStar | Managements</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header class="sticky top-0 z-50">
-        <!-- Nav -->
-        <nav class="bg-[#FAFAFA]">
-          <div class="container py-4 mx-auto flex justify-between items-baseline">
-            <div>
-              <a href="./index.html"
-                ><h1 class="text-2xl font-bold ps-2 md:ps-0">
-                  MEDIASTAR LTD.
-                </h1></a
-              >
-            </div>
-  
-            <!-- Menu items -->
-            <div class="hidden md:flex space-x-10 text-md md:order-2">
-              <!-- Dropdown for "COMPANY" -->
-              <div class="relative group">
-                <a
-                  href="#"
-                  class="group-hover:text-red-500 flex items-center"
-                  onclick="toggleDropdown('company-dropdown', 'open-arrow')"
-                >
-                  <p>COMPANY</p>
-                  <!-- Arrow indicators for open and closed -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="h-4 w-4 inline-block ml-1 transform transition-transform"
-                    id="open-arrow"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </a>
-                <!-- Dropdown content (initially hidden) -->
-                <div
-                id="company-dropdown"
-                class="hidden absolute left-0 mt-2 p-6 mx-auto space-y-4 bg-[#D9D9D9D9] opacity-85 "
-              >
-                <a href="./about.html"><p>ABOUT US</p></a>
-                <hr class="py-1 border-gray-500" />
-                <a href="./achievements.html"><p>ACHIEVEMENTS</p></a>
-                <hr class="py-1 border-gray-500"/>
-                <a href="#"><p>MANAGEMENT</p></a>
-                <hr class="py-1 border-gray-500" />
-              </div>
-              </div>
-  
-              <!-- Other menu items -->
-              <a href="./business.html"><p>BUSINESSES</p></a>
-              <a href="./csr.html"><p>CSR</p></a>
-              <a href="./career.html"><p>CAREER</p></a>
-              <a href="./contact.html"><p>CONTACT</p></a>
-            </div>
-  
-            <!-- Mobile menu button -->
-            <div class="md:hidden pr-2">
-              <button id="mobile-menu-button" class="text-black">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="h-8 w-8"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+      <!-- Nav -->
+      <nav class="bg-[#FAFAFA]">
+        <div class="container py-4 mx-auto flex justify-between items-baseline">
+          <div>
+            <a href="./index.html"
+              ><h1 class="text-2xl font-bold ps-2 md:ps-0">
+                MEDIASTAR LTD.
+              </h1></a
+            >
           </div>
-  
-          <!-- Mobile menu (initially hidden) -->
-          <div
-            id="mobile-menu"
-            class="hidden md:hidden text-right pr-2 fixed top-[72px] w-full bg-gray-400 opacity-50 z-50"
-          >
-            <!-- Dropdown for "COMPANY" in mobile menu -->
+
+          <!-- Menu items -->
+          <div class="hidden md:flex space-x-10 text-md md:order-2">
+            <!-- Dropdown for "COMPANY" -->
             <div class="relative group">
               <a
                 href="#"
-                class="group-hover:text-red-500 flex items-center justify-end"
-                onclick="toggleDropdown('mobile-company-dropdown', 'mobile-open-arrow')"
+                class="group-hover:text-red-500 flex items-center"
+                onclick="toggleDropdown('company-dropdown', 'open-arrow')"
               >
                 <p>COMPANY</p>
-                <!-- Arrow indicator -->
+                <!-- Arrow indicators for open and closed -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   class="h-4 w-4 inline-block ml-1 transform transition-transform"
-                  id="mobile-open-arrow"
+                  id="open-arrow"
                 >
                   <path
                     stroke-linecap="round"
@@ -122,98 +54,238 @@
               </a>
               <!-- Dropdown content (initially hidden) -->
               <div
-                id="mobile-company-dropdown"
-                class="hidden mt-2 me-4 ms-20 space-y-2  "
+                id="company-dropdown"
+                class="hidden absolute left-0 mt-2 p-6 mx-auto space-y-4 bg-[#D9D9D9D9] opacity-85"
               >
-              <hr>
                 <a href="./about.html"><p>ABOUT US</p></a>
-                <hr>
+                <hr class="py-1 border-gray-500" />
                 <a href="./achievements.html"><p>ACHIEVEMENTS</p></a>
-                <hr>
+                <hr class="py-1 border-gray-500" />
                 <a href="#"><p>MANAGEMENT</p></a>
-                <hr>
+                <hr class="py-1 border-gray-500" />
               </div>
             </div>
-  
-            <!-- Other mobile menu items -->
+
+            <!-- Other menu items -->
             <a href="./business.html"><p>BUSINESSES</p></a>
             <a href="./csr.html"><p>CSR</p></a>
             <a href="./career.html"><p>CAREER</p></a>
             <a href="./contact.html"><p>CONTACT</p></a>
           </div>
-        </nav>
-      </header>
-      <!-- main -->
-      <main>
-        <!-- Banner -->
-<div style="background-image: url(./assets/images/cover.png); " class="w-full bg-cover bg-center h-[30vh] md:h-[70vh]"  >
-    <div class="flex justify-center items-center text-white text-3xl md:text-4xl font-bold h-full">
-        <h1>MANAGEMENT  </h1>
-    </div>
-    </div>
-    <!-- Members -->
-    <div class=" flex flex-col md:flex-row items-center justify-between  my-10 bg-[#DCDCDC] px-10 ">
-       
 
-<div><img class="w-96" src="./assets/images/editor.png" alt="" ></div>
-        
-        <div class="w-full md:w-[500px] mt-10 md:mt-0">
-            
-            <div class=" text-justify">
-             
-             
-              <h3 class="text-2xl md:text-3xl font-bold md:font-extrabold mt-6 mb-8">
-                Matiur Rahman <br><span>Editor, Prothom Alo</span>
-              </h3>
-              <p class="text-justify">Matiur Rahman is an esteemed journalist and the editor of Prothom Alo, the largest circulated daily newspaper in Bangladesh. With an unwavering commitment to journalistic integrity, Rahman has played a pivotal role in shaping public opinion and promoting freedom of expression. Under his leadership, Prothom Alo has emerged as a trusted source of news, known for its comprehensive coverage and unbiased reporting. Rahman's dedication to highlighting critical issues and exposing corruption has earned him widespread recognition and respect. His leadership and vision have made a profound impact on the media landscape, cementing his status as a prominent figure in Bangladeshi journalism.</p>
+          <!-- Mobile menu button -->
+          <div class="md:hidden pr-2">
+            <button id="mobile-menu-button" class="text-black">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-8 w-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile menu (initially hidden) -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden text-right pr-2 fixed top-[72px] w-full bg-gray-400 opacity-50 z-50"
+        >
+          <!-- Dropdown for "COMPANY" in mobile menu -->
+          <div class="relative group">
+            <a
+              href="#"
+              class="group-hover:text-red-500 flex items-center justify-end"
+              onclick="toggleDropdown('mobile-company-dropdown', 'mobile-open-arrow')"
+            >
+              <p>COMPANY</p>
+              <!-- Arrow indicator -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-4 w-4 inline-block ml-1 transform transition-transform"
+                id="mobile-open-arrow"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </a>
+            <!-- Dropdown content (initially hidden) -->
+            <div
+              id="mobile-company-dropdown"
+              class="hidden mt-2 me-4 ms-20 space-y-2"
+            >
+              <hr />
+              <a href="./about.html"><p>ABOUT US</p></a>
+              <hr />
+              <a href="./achievements.html"><p>ACHIEVEMENTS</p></a>
+              <hr />
+              <a href="#"><p>MANAGEMENT</p></a>
+              <hr />
             </div>
-            
           </div>
-    </div>
-      </main>
-      <!-- Footer -->
-      <footer class="flex flex-col md:flex-row justify-between bg-[#E2E2E2] p-10">
-        <div class="">
-          <h1 class="text-2xl md:text-4xl font-bold">MEDIASTAR LTD.</h1>
-          <div class="flex gap-4 my-4">
-            <i class="fa-brands text-3xl fa-facebook-f"></i>
-            <i class="fa-brands text-3xl fa-instagram"></i>
-            <i class="fa-brands text-3xl fa-twitter"></i>
-            <i class="fa-brands text-3xl fa-youtube"></i>
-        
+
+          <!-- Other mobile menu items -->
+          <a href="./business.html"><p>BUSINESSES</p></a>
+          <a href="./csr.html"><p>CSR</p></a>
+          <a href="./career.html"><p>CAREER</p></a>
+          <a href="./contact.html"><p>CONTACT</p></a>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- Banner -->
+      <div
+        style="background-image: url(./assets/images/cover.png)"
+        class="w-full bg-cover bg-center h-[30vh] md:h-[70vh]"
+      >
+        <div
+          class="flex justify-center items-center text-white text-3xl md:text-4xl font-bold h-full"
+        >
+          <h1>MANAGEMENT</h1>
+        </div>
+      </div>
+      <!-- Editor -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-between my-10 bg-[#DCDCDC] px-10"
+      >
+        <div><img class="w-96" src="./assets/images/editor.png" alt="" /></div>
+
+        <div class="w-full md:w-[500px] mt-10 md:mt-0">
+          <div class="text-justify">
+            <h3
+              class="text-2xl md:text-3xl font-bold md:font-extrabold mt-6 mb-8"
+            >
+              Matiur Rahman <br /><span>Editor, Prothom Alo</span>
+            </h3>
+            <p class="text-justify">
+              Matiur Rahman is an esteemed journalist and the editor of Prothom
+              Alo, the largest circulated daily newspaper in Bangladesh. With an
+              unwavering commitment to journalistic integrity, Rahman has played
+              a pivotal role in shaping public opinion and promoting freedom of
+              expression. Under his leadership, Prothom Alo has emerged as a
+              trusted source of news, known for its comprehensive coverage and
+              unbiased reporting. Rahman's dedication to highlighting critical
+              issues and exposing corruption has earned him widespread
+              recognition and respect. His leadership and vision have made a
+              profound impact on the media landscape, cementing his status as a
+              prominent figure in Bangladeshi journalism.
+            </p>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row gap-12">
-          <div class="font-semibold">
-            <a href="./about.html"><p>About us</p></a>
-            <a href="./business.html"><p>Businesses</p></a>
-            <a href="./career.html"><p>Career</p></a>
-            
-          </div>
-          <div>
-            <p class="font-semibold">Contact Us</p>
-            <p class="font-semibold mt-4">Address</p>
-            <p>Pragati Insurance Bhaban, <br> 20-21, Karwan Bazar Dhaka 1215, <br> Bangladesh</p>
-            <a href="#"><p class="mt-4">Privacy Policy</p></a>
-            <a href="#"><p>Terms of Use</p></a>
-          </div>
+      </div>
+      <!-- members -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-24">
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
         </div>
-            </footer>
-            <!-- JS -->
-<script src="https://kit.fontawesome.com/2f678b91de.js" crossorigin="anonymous"></script>
-<script>
-  function toggleDropdown(id) {
-    const dropdown = document.getElementById(id);
-    dropdown.classList.toggle("hidden");
-  }
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-52" src="./assets/icons/demo.png" alt="" />
+          <p class="text-2xl font-bold">Full Name</p>
+          <p><span class="text-base font-bold"> Designation</span></p>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="flex flex-col md:flex-row justify-between bg-[#E2E2E2] p-10">
+      <div class="">
+        <h1 class="text-2xl md:text-4xl font-bold">MEDIASTAR LTD.</h1>
+        <div class="flex gap-4 my-4">
+          <i class="fa-brands text-3xl fa-facebook-f"></i>
+          <i class="fa-brands text-3xl fa-instagram"></i>
+          <i class="fa-brands text-3xl fa-twitter"></i>
+          <i class="fa-brands text-3xl fa-youtube"></i>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="font-semibold">
+          <a href="./about.html"><p>About us</p></a>
+          <a href="./business.html"><p>Businesses</p></a>
+          <a href="./career.html"><p>Career</p></a>
+        </div>
+        <div>
+          <p class="font-semibold">Contact Us</p>
+          <p class="font-semibold mt-4">Address</p>
+          <p>
+            Pragati Insurance Bhaban, <br />
+            20-21, Karwan Bazar Dhaka 1215, <br />
+            Bangladesh
+          </p>
+          <a href="#"><p class="mt-4">Privacy Policy</p></a>
+          <a href="#"><p>Terms of Use</p></a>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script
+      src="https://kit.fontawesome.com/2f678b91de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
 
-  // Toggle mobile menu
-  const mobileMenuButton = document.getElementById("mobile-menu-button");
-  const mobileMenu = document.getElementById("mobile-menu");
+      // Toggle mobile menu
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-  mobileMenuButton.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
-</body>
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
