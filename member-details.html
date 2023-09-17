@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaStar | Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky top-0 z-50">
+        <!-- Nav -->
+        <nav class="bg-[#FAFAFA]">
+          <div class="container py-4 mx-auto flex justify-between items-baseline">
+            <div>
+              <a href="./index.html"
+                ><h1 class="text-2xl font-bold ps-2 md:ps-0">
+                  MEDIASTAR LTD.
+                </h1></a
+              >
+            </div>
+  
+            <!-- Menu items -->
+            <div class="hidden md:flex space-x-10 text-md md:order-2">
+              <!-- Dropdown for "COMPANY" -->
+              <div class="relative group">
+                <a
+                  href="#"
+                  class="group-hover:text-red-500 flex items-center"
+                  onclick="toggleDropdown('company-dropdown', 'open-arrow')"
+                >
+                  <p>COMPANY</p>
+                  <!-- Arrow indicators for open and closed -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="h-4 w-4 inline-block ml-1 transform transition-transform"
+                    id="open-arrow"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </a>
+                <!-- Dropdown content (initially hidden) -->
+                <div
+                  id="company-dropdown"
+                  class="hidden absolute left-0 mt-2 p-6 mx-auto space-y-4 bg-[#D9D9D9D9] opacity-85"
+                >
+                  <a href="./about.html"><p>ABOUT US</p></a>
+                  <hr class="py-1 border-gray-500" />
+                  <a href="./achievements.html"><p>ACHIEVEMENTS</p></a>
+                  <hr class="py-1 border-gray-500" />
+                  <a href="#"><p>MANAGEMENT</p></a>
+                  <hr class="py-1 border-gray-500" />
+                </div>
+              </div>
+  
+              <!-- Other menu items -->
+              <a href="./business.html"><p>BUSINESSES</p></a>
+              <a href="./csr.html"><p>CSR</p></a>
+              <a href="./career.html"><p>CAREER</p></a>
+              <a href="./contact.html"><p>CONTACT</p></a>
+            </div>
+  
+            <!-- Mobile menu button -->
+            <div class="md:hidden pr-2">
+              <button id="mobile-menu-button" class="text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="h-8 w-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+  
+          <!-- Mobile menu (initially hidden) -->
+          <div
+            id="mobile-menu"
+            class="hidden md:hidden text-right pr-2 fixed top-[72px] w-full bg-[#D9D9D9D9] opacity-85 z-50"
+          >
+            <!-- Dropdown for "COMPANY" in mobile menu -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-red-500 flex items-center justify-end"
+                onclick="toggleDropdown('mobile-company-dropdown', 'mobile-open-arrow')"
+              >
+                <p>COMPANY</p>
+                <!-- Arrow indicator -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="h-4 w-4 inline-block ml-1 transform transition-transform"
+                  id="mobile-open-arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Dropdown content (initially hidden) -->
+              <div
+                id="mobile-company-dropdown"
+                class="hidden mt-2 me-4 ms-20 space-y-2"
+              >
+                <hr />
+                <a href="./about.html"><p>ABOUT US</p></a>
+                <hr />
+                <a href="./achievements.html"><p>ACHIEVEMENTS</p></a>
+                <hr />
+                <a href="#"><p>MANAGEMENT</p></a>
+                <hr />
+              </div>
+            </div>
+  
+            <!-- Other mobile menu items -->
+            <a href="./business.html"><p>BUSINESSES</p></a>
+            <a href="./csr.html"><p>CSR</p></a>
+            <a href="./career.html"><p>CAREER</p></a>
+            <a href="./contact.html"><p>CONTACT</p></a>
+          </div>
+        </nav>
+      </header>
+      <main>
+<div class="flex flex-col items-center bg-[#FAFAFA] py-24 ">
+  <div>
+<img class="rounded-full w-96 h-96" src="./assets/icons/demo.png" alt="">
+  </div>
+  <div>
+    <h3
+    class="text-2xl md:text-3xl font-bold md:font-extrabold mt-6 mb-8"
+  >
+    Matiur Rahman <br /><span class="text-lg font-semibold">Editor, Prothom Alo</span>
+  </h3>
+  </div>
+  <p class="px-10 md:px-24 text-justify font-semibold">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore, earum dolorum eligendi praesentium in, voluptate sequi ab voluptatum at iste reiciendis id. Animi deserunt exercitationem molestiae itaque explicabo dolorem, nihil porro harum totam assumenda odio expedita necessitatibus. Quod, aliquid molestias corporis aliquam quam architecto perferendis ut, inventore dolores impedit, fuga nihil expedita vitae nobis. Perferendis asperiores iure blanditiis temporibus! Expedita numquam corrupti vitae ipsa explicabo pariatur accusantium quis quasi id, tempore, nulla mollitia eligendi beatae ex placeat. Aliquam facere voluptas quos ipsa dolorum unde nobis, corporis veritatis dolor delectus magni natus, totam vel quisquam tempore repellat perferendis blanditiis mollitia deserunt consequatur quia suscipit hic accusantium pariatur. Accusantium hic, vero dolor placeat natus aspernatur magni praesentium unde laudantium tenetur ipsam non possimus provident ex corporis mollitia asperiores animi autem, quod maxime quisquam iure quasi omnis! Cum quos laudantium a veritatis maiores dolor doloremque aperiam autem? Fugit quam, earum consequuntur nisi animi placeat tempora incidunt minus, illum voluptates distinctio quisquam fuga ad. Tempore accusantium cum, iste, veritatis beatae similique natus provident, doloribus voluptates quod alias fuga delectus quo et perspiciatis. Magnam, fuga? Exercitationem doloribus impedit blanditiis rerum pariatur minus. Corporis porro aliquam ratione adipisci error quaerat ducimus doloribus odit dignissimos ex voluptatibus libero minima voluptatem natus sunt reprehenderit sequi, quae molestiae veritatis dolor unde rerum ipsa repellat! Dignissimos maxime placeat velit ipsa. Quisquam labore, quos perferendis distinctio mollitia saepe, tempore dolor ipsum quam laborum voluptate porro vitae odit temporibus laudantium voluptates quasi? Illum velit facilis animi. Molestias libero repellat nostrum cum impedit magnam aperiam, voluptatem dolor eius in minus omnis maxime eum nam ipsum! Eaque, repellat quidem earum nulla ipsa quisquam non explicabo vel animi! Id, exercitationem possimus, tempore expedita harum ex odit dolor architecto ipsam sapiente doloremque eveniet commodi, ad fugit quis assumenda ullam quasi iusto velit veniam fugiat! Perspiciatis sit aspernatur distinctio accusamus ab dolore veritatis consectetur fugiat eaque minima porro officia magni eum sed voluptatum, aliquam praesentium error illum earum cumque sapiente modi numquam repellat harum. Consequatur earum mollitia minus dolorum quas enim accusamus? Tempore, nam impedit. Deserunt rem minus dicta nobis sint quis commodi earum placeat beatae, laborum perferendis ipsam velit officiis autem id quasi eos corrupti, vel molestias fuga a dolorum dignissimos voluptatum nihil? Repellat quam labore, natus doloremque deserunt at expedita repudiandae velit consectetur culpa eius perspiciatis blanditiis, nobis similique exercitationem quo deleniti rerum consequatur aut. Quam iure minus ipsa similique. Quo, inventore distinctio harum asperiores numquam corporis ratione esse, facilis assumenda ipsam incidunt qui cumque rem dolorem autem perspiciatis tenetur nostrum! Placeat et ea nam dolore atque. Dolores labore veritatis, asperiores quisquam magnam perspiciatis. Itaque perspiciatis nisi, placeat ex dolorum fuga minus sequi odit hic rem porro exercitationem aliquid qui alias recusandae reiciendis inventore? Natus harum reprehenderit est assumenda quos dolore nihil accusantium culpa mollitia. Reiciendis praesentium quas ullam saepe sit porro illum tempore dignissimos nam id veniam itaque laudantium dolore illo distinctio dolores libero nesciunt voluptates soluta quis expedita deserunt sed, numquam incidunt? Officiis quos, magni quas eveniet magnam quae porro praesentium ratione!
+  </p>
+</div>
+<div>
+  
+</div>
+      </main>
+      <!-- Footer -->
+    <footer class="flex flex-col md:flex-row justify-between bg-[#E2E2E2] p-10">
+      <div class="">
+        <h1 class="text-2xl md:text-4xl font-bold">MEDIASTAR LTD.</h1>
+        <div class="flex gap-4 my-4">
+          <i class="fa-brands text-3xl fa-facebook-f"></i>
+          <i class="fa-brands text-3xl fa-instagram"></i>
+          <i class="fa-brands text-3xl fa-twitter"></i>
+          <i class="fa-brands text-3xl fa-youtube"></i>
+      
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="font-semibold">
+          <a href="./about.html"><p>About us</p></a>
+          <a href="./business.html"><p>Businesses</p></a>
+          <a href="./career.html"><p>Career</p></a>
+          
+        </div>
+        <div>
+          <p class="font-semibold">Contact Us</p>
+          <p class="font-semibold mt-4">Address</p>
+          <p>Pragati Insurance Bhaban, <br> 20-21, Karwan Bazar Dhaka 1215, <br> Bangladesh</p>
+          <a href="#"><p class="mt-4">Privacy Policy</p></a>
+          <a href="#"><p>Terms of Use</p></a>
+        </div>
+      </div>
+          </footer>
+          
+      <!-- JS -->
+      <script src="https://kit.fontawesome.com/2f678b91de.js" crossorigin="anonymous"></script>
+          <script>
+            function toggleDropdown(id) {
+              const dropdown = document.getElementById(id);
+              dropdown.classList.toggle("hidden");
+            }
+      
+            // Toggle mobile menu
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+      
+            mobileMenuButton.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+            });
+          </script>
+</body>
+</html>
