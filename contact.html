@@ -19,12 +19,31 @@
           resize: vertical;
         }
       </style>
-      
+      <!-- css -->
+    <style>
+      /* Define the animation */
+      @keyframes moveArrow {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(5px); /* Move 5 pixels to the right */
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      /* Apply the animation to the image */
+      .arrow-link img {
+        animation: moveArrow 1.5s infinite; /* Adjust the duration as needed */
+      }
+    </style>
 </head>
 <body>
    <!-- Header -->
-<header class="sticky top-0">
-    <nav class="bg-[#FAFAFA]">
+   <header class="sticky top-0 bg-[#FAFAFA] z-50">
+    <nav class="">
       <div class="container py-4 mx-auto flex justify-between items-baseline">
         <div>
           <a href="index.html"
@@ -35,12 +54,12 @@
         </div>
 
         <!-- Menu items -->
-        <div class="hidden md:flex space-x-10 text-md md:order-2">
+        <div style="font-family: 'Roboto', sans-serif;" class="hidden md:flex space-x-10 text-md md:order-2">
           <!-- Dropdown for "COMPANY" -->
           <div class="relative group">
             <a
               href="#"
-              class="group-hover:text-red-500 flex items-center"
+              class=" flex items-center"
               onclick="toggleDropdown('company-dropdown', 'open-arrow')"
             >
               <p>COMPANY</p>
@@ -62,7 +81,7 @@
               </svg>
             </a>
             <!-- Dropdown content (initially hidden) -->
-            <div
+            <div style="font-family: 'Roboto', sans-serif;"
               id="company-dropdown"
               class="hidden absolute left-0 mt-2 p-6 mx-auto space-y-4 bg-[#D9D9D9D9] opacity-85 "
             >
@@ -83,7 +102,7 @@
         </div>
 
         <!-- Mobile menu button -->
-        <div class="md:hidden pr-2">
+        <div class="md:hidden pr-2 ">
           <button id="mobile-menu-button" class="text-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -106,13 +125,13 @@
       <!-- Mobile menu (initially hidden) -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden text-right pr-2 fixed top-[72px] w-full bg-[#D9D9D9D9] opacity-85 z-50"
+        class="hidden font-semibold py-4 px-2 flex flex-col gap-4 md:hidden text-left pr-2 fixed top-[72px] w-full bg-[#D9D9D9D9] z-50"
       >
         <!-- Dropdown for "COMPANY" in mobile menu -->
-        <div class="relative group">
+        <div class="relative group ">
           <a
             href="#"
-            class="group-hover:text-red-500 flex items-center justify-end"
+            class=" flex items-center justify-left"
             onclick="toggleDropdown('mobile-company-dropdown', 'mobile-open-arrow')"
           >
             <p>COMPANY</p>
@@ -136,7 +155,7 @@
           <!-- Dropdown content (initially hidden) -->
           <div
             id="mobile-company-dropdown"
-            class="hidden mt-2 me-4 ms-20 space-y-2  "
+            class="hidden mt-2 px-4 font-normal text-gray-900 space-y-4"
           >
           <hr>
             <a href="./about.html"><p>ABOUT US</p></a>
@@ -171,7 +190,7 @@
             <input type="email" required placeholder="Email" class="input-field"> <br>
             <input type="text" required placeholder="Contact Number" class="input-field"> <br>
             <textarea cols="23" rows="4" placeholder="Write your message ..." class="input-field"></textarea>
-            <button class="flex justify-between items-center bg-[#0572E6] px-4 py-3 mt-6">
+            <button class="flex justify-between items-center bg-[#0572E6] px-4 py-3 my-6">
                 <p class="text-[#fff]">Send</p>
                 <a class="arrow-link" href=""><img class="w-16 ms-4 " src="./assets/icons/arrow.png" alt="link arrow"></a>
               </button>

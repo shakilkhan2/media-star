@@ -71,12 +71,11 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="sticky top-0 z-50">
-      <!-- Nav -->
-      <nav class="bg-[#FAFAFA]">
+    <header class="sticky top-0 bg-[#FAFAFA] z-50">
+      <nav class="">
         <div class="container py-4 mx-auto flex justify-between items-baseline">
           <div>
-            <a href="./index.html"
+            <a href="index.html"
               ><h1 class="text-2xl font-bold ps-2 md:ps-0">
                 MEDIASTAR LTD.
               </h1></a
@@ -84,12 +83,12 @@
           </div>
 
           <!-- Menu items -->
-          <div class="hidden md:flex space-x-10 text-md md:order-2">
+          <div style="font-family: 'Roboto', sans-serif;" class="hidden md:flex space-x-10 text-md md:order-2">
             <!-- Dropdown for "COMPANY" -->
             <div class="relative group">
               <a
                 href="#"
-                class="group-hover:text-red-500 flex items-center"
+                class=" flex items-center"
                 onclick="toggleDropdown('company-dropdown', 'open-arrow')"
               >
                 <p>COMPANY</p>
@@ -111,14 +110,14 @@
                 </svg>
               </a>
               <!-- Dropdown content (initially hidden) -->
-              <div
+              <div style="font-family: 'Roboto', sans-serif;"
                 id="company-dropdown"
-                class="hidden absolute left-0 mt-2 p-6 mx-auto space-y-4 bg-[#D9D9D9D9] opacity-85"
+                class="hidden absolute left-0 mt-2 p-6 mx-auto space-y-4 bg-[#D9D9D9D9] opacity-85 "
               >
                 <a href="./about.html"><p>ABOUT US</p></a>
                 <hr class="py-1 border-gray-500" />
                 <a href="./achievements.html"><p>ACHIEVEMENTS</p></a>
-                <hr class="py-1 border-gray-500" />
+                <hr class="py-1 border-gray-500"/>
                 <a href="./management.html"><p>MANAGEMENT</p></a>
                 <hr class="py-1 border-gray-500" />
               </div>
@@ -132,7 +131,7 @@
           </div>
 
           <!-- Mobile menu button -->
-          <div class="md:hidden pr-2">
+          <div class="md:hidden pr-2 ">
             <button id="mobile-menu-button" class="text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -155,13 +154,13 @@
         <!-- Mobile menu (initially hidden) -->
         <div
           id="mobile-menu"
-          class="hidden md:hidden text-right pr-2 fixed top-[72px] w-full bg-[#D9D9D9D9] opacity-85 z-50"
+          class="hidden font-semibold py-4 px-2 flex flex-col gap-4 md:hidden text-left pr-2 fixed top-[72px] w-full bg-[#D9D9D9D9] z-50"
         >
           <!-- Dropdown for "COMPANY" in mobile menu -->
-          <div class="relative group">
+          <div class="relative group ">
             <a
               href="#"
-              class="group-hover:text-red-500 flex items-center justify-end"
+              class=" flex items-center justify-left"
               onclick="toggleDropdown('mobile-company-dropdown', 'mobile-open-arrow')"
             >
               <p>COMPANY</p>
@@ -185,15 +184,15 @@
             <!-- Dropdown content (initially hidden) -->
             <div
               id="mobile-company-dropdown"
-              class="hidden mt-2 me-4 ms-20 space-y-2"
+              class="hidden mt-2 px-4 font-normal text-gray-900 space-y-4"
             >
-              <hr />
+            <hr>
               <a href="./about.html"><p>ABOUT US</p></a>
-              <hr />
+              <hr>
               <a href="./achievements.html"><p>ACHIEVEMENTS</p></a>
-              <hr />
+              <hr>
               <a href="./management.html"><p>MANAGEMENT</p></a>
-              <hr />
+              <hr>
             </div>
           </div>
 
@@ -343,7 +342,7 @@
             </div>
             <div class="w-[90%] md:w-[50%] pb-4 md:pb-none">
               <img src="./assets/images/prothom-alo-digital.png" alt="" />
-              <p class="text-justify">
+              <p class="text-justify mt-4">
                 Prothom Alo Digital owns and operates a wide range of digital
                 products and services, including news and entertainment portals,
                 e-magazine platforms, e-commerce, and OTT platform. We have a
